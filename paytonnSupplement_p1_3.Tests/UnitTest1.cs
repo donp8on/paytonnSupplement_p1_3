@@ -30,5 +30,17 @@ namespace paytonnSupplement_p1_3.Tests
             Assert.Equal(content, fileContent);
         }
 
+        [Fact]
+        public void ShouldReadAsciiFile_ReadsFileCorrectly()
+        {
+            string filePath = "test_ascii.txt";
+            string expectedContent = "Hello, World!";
+            File.WriteAllText(filePath, expectedContent);
+
+            string content = paytonnSupplement_p1_3.ReadAsciiFile(filePath);
+
+            Assert.Equal(expectedContent, content);
+        }
+
     }
 }

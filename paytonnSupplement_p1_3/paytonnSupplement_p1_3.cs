@@ -36,7 +36,7 @@ namespace paytonnSupplement_p1_3
 
         public static byte[] ReadBinaryFile(string filePath)
         {
-            throw new System.NotImplementedException();
+            return File.ReadAllBytes(filePath);
         }
 
         public static void CompareFileSizes()

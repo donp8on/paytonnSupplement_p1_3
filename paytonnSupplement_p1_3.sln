@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paytonnSupplement_p1_3", "paytonnSupplement_p1_3\paytonnSupplement_p1_3.csproj", "{D5512D1A-3500-4275-98C1-E1D81B0E40F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paytonnSupplement_p1_3.Tests", "paytonnSupplement_p1_3.Tests\paytonnSupplement_p1_3.Tests.csproj", "{7B57C246-9CDF-4E24-B74B-EC0900AB4410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5512D1A-3500-4275-98C1-E1D81B0E40F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5512D1A-3500-4275-98C1-E1D81B0E40F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5512D1A-3500-4275-98C1-E1D81B0E40F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5512D1A-3500-4275-98C1-E1D81B0E40F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B57C246-9CDF-4E24-B74B-EC0900AB4410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B57C246-9CDF-4E24-B74B-EC0900AB4410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B57C246-9CDF-4E24-B74B-EC0900AB4410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B57C246-9CDF-4E24-B74B-EC0900AB4410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

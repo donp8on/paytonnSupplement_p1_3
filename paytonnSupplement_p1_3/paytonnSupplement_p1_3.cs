@@ -26,7 +26,7 @@ namespace paytonnSupplement_p1_3
 
         public static string ReadAsciiFile(string filePath)
         {
-            throw new System.NotImplementedException();
+            return File.ReadAllText(filePath);
         }
 
         public static byte[] ReadBinaryFile(string filePath)

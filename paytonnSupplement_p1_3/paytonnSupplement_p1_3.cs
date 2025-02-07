@@ -6,7 +6,7 @@ namespace paytonnSupplement_p1_3
     {
         public static void CreateAsciiFile(string filePath, string content)
         {
-            throw new System.NotImplementedException();
+            File.WriteAllText(filePath, content);
         }
 
         public static void CreateBinaryFile(string filePath, byte[] content)

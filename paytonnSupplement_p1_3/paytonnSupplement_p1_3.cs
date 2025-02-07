@@ -16,7 +16,7 @@ namespace paytonnSupplement_p1_3
 
         public static void CreateBinaryFile(string filePath, byte[] content)
         {
-            throw new System.NotImplementedException();
+            File.WriteAllBytes(filePath, content);
         }
 
         public static string ReadAsciiFile(string filePath)

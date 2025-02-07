@@ -34,6 +34,11 @@ namespace paytonnSupplement_p1_3
             return File.ReadAllText(filePath);
         }
 
+        /// <summary>
+        /// Reads the content of a binary file.
+        /// </summary>
+        /// <param name="filePath">The path to the binary file that is read.</param>
+        /// <returns>Returns the content of the binary file.</returns>
         public static byte[] ReadBinaryFile(string filePath)
         {
             return File.ReadAllBytes(filePath);

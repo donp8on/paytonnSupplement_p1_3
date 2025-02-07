@@ -42,5 +42,17 @@ namespace paytonnSupplement_p1_3.Tests
             Assert.Equal(expectedContent, content);
         }
 
+        [Fact]
+        public void ShouldReadBinaryFile_ReadsFileCorrectly()
+        {
+            string filePath = "test_binary.bin";
+            byte[] expectedContent = Encoding.UTF8.GetBytes("Hello, World!");
+            File.WriteAllBytes(filePath, expectedContent);
+
+            byte[] content = paytonnSupplement_p1_3.ReadBinaryFile(filePath);
+
+            Assert.Equal(expectedContent, content);
+        }
+
     }
 }

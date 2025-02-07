@@ -24,6 +24,11 @@ namespace paytonnSupplement_p1_3
             File.WriteAllBytes(filePath, content);
         }
 
+        /// <summary>
+        /// Reads the content of an ASCII file.
+        /// </summary>
+        /// <param name="filePath">The path to the ASCII file that is read.</param>
+        /// <returns>Returns the content inside of the ASCII file as a string.</returns>
         public static string ReadAsciiFile(string filePath)
         {
             return File.ReadAllText(filePath);

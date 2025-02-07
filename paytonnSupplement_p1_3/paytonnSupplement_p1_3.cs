@@ -14,6 +14,11 @@ namespace paytonnSupplement_p1_3
             File.WriteAllText(filePath, content);
         }
 
+        /// <summary>
+        /// Creates a new binary file with the specified content.
+        /// </summary>
+        /// <param name="filePath">The path of the file to create for binary.</param>
+        /// <param name="content">The content inside of the file.</param>
         public static void CreateBinaryFile(string filePath, byte[] content)
         {
             File.WriteAllBytes(filePath, content);

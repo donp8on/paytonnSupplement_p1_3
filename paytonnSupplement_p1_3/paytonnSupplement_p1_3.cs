@@ -46,7 +46,42 @@ namespace paytonnSupplement_p1_3
 
         public static void CompareFileSizes()
         {
-            throw new System.NotImplementedException();
+            int[] sizes = { 10, 100, 1000, 10000 };
+            const string asciiChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+            Random rand = new Random();
+
+            foreach (int size in sizes)
+            {
+                // Generate a random ASCII-only string
+                StringBuilder randomString = new StringBuilder();
+                for (int i = 0; i < size; i++)
+                {
+                    randomString.Append(asciiChars[rand.Next(asciiChars.Length)]);
+                }
+
+                string finalString = randomString.ToString();
+
+                // File paths
+                string asciiFilePath = $"ascii_{size}.txt";
+                string binaryFilePath = $"binary_{size}.bin";
+
+                // Save to ASCII file
+                File.WriteAllText(asciiFilePath, finalString, Encoding.ASCII);
+
+                // Save to Binary file
+                File.WriteAllBytes(binaryFilePath, Encoding.ASCII.GetBytes(finalString));
+
+                // Get file sizes
+                long asciiSize = new FileInfo(asciiFilePath).Length;
+                long binarySize = new FileInfo(binaryFilePath).Length;
+
+                // Print size comparison as a list
+                Console.WriteLine($"String Length: {size}");
+                Console.WriteLine($"ASCII File Size: {asciiSize} bytes");
+                Console.WriteLine($"Binary File Size: {binarySize} bytes");
+                Console.WriteLine("--------------------------------");
+            }
         }
 
     }

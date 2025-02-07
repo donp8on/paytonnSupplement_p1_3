@@ -4,6 +4,11 @@ namespace paytonnSupplement_p1_3
 {
     public class paytonnSupplement_p1_3
     {
+        /// <summary>
+        /// Creates a new ASCII file with the specified content.
+        /// </summary>
+        /// <param name="filePath">The path of the file to create.</param>
+        /// <param name="content">The content inside of the file.</param>
         public static void CreateAsciiFile(string filePath, string content)
         {
             File.WriteAllText(filePath, content);
